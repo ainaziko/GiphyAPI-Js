@@ -6,7 +6,7 @@
 
 body {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 header {
@@ -70,4 +70,19 @@ header {
 }
 .search-btn:focus {
     outline: none;
+}
+
+main {
+  margin: 2rem;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.content__item img{
+    width: 100%;
+    aspect-ratio: 4/3;
 }
